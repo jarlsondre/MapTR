@@ -1419,6 +1419,7 @@ class CustomNuScenesLocalMapDataset(CustomNuScenesDataset):
         Returns:
             dict: Data dictionary of the corresponding index.
         """
+        print("Got to __getitem__")
         if self.test_mode:
             return self.prepare_test_data(idx)
         while True:
