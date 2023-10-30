@@ -44,7 +44,6 @@ class LoadMultiViewImageFromFiles(object):
         """
         print("Got to this position #2")
         print(f"results: {results}")
-        print(f"filename: {filename}")
 
         filename = results["img_filename"]
         # img is of shape (h, w, c, num_views)
