@@ -1198,6 +1198,7 @@ class CustomNuScenesLocalMapDataset(CustomNuScenesDataset):
         Returns:
             dict: Training data dict of the corresponding index.
         """
+        print("Got to this position #1")
         data_queue = []
 
         # temporal aug

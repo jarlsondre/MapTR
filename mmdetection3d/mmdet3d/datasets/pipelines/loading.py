@@ -42,9 +42,11 @@ class LoadMultiViewImageFromFiles(object):
                 - scale_factor (float): Scale factor.
                 - img_norm_cfg (dict): Normalization configuration of images.
         """
-        filename = results["img_filename"]
+        print("Got to this position #2")
         print(f"results: {results}")
         print(f"filename: {filename}")
+
+        filename = results["img_filename"]
         # img is of shape (h, w, c, num_views)
         img = np.stack(
             [mmcv.imread(name, self.color_type) for name in filename], axis=-1
