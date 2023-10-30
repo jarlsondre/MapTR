@@ -111,6 +111,7 @@ def parse_args():
 
 
 def main():
+    print("Got here in train.py")
     args = parse_args()
 
     cfg = Config.fromfile(args.config)
